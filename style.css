@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background-color: hsl(30, 54%, 90%);
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    max-width: 50vw;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin: 20px 0;
+  }
+  
+  .container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .container h1,
+  h3 {
+    font-family: "Young Serif", serif;
+  }
+  
+  .container p {
+    font-size: 18px;
+    color: hsl(30, 10%, 34%);
+  }
+  
+  .prepration {
+    margin-left: 25px;
+    font-size: 20px;
+    background-color: hsl(30, 54%, 90%);
+    padding: 20px;
+    border: 20px;
+    border-radius: 10px;
+  }
+  
+  .prepration ul {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .prepration h2 {
+    font-size: 30px;
+    color: hsl(332, 51%, 32%);
+  }
+  
+  span.bold {
+    font-weight: bold;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  
+  .ingredients h3,
+  .instructions h3,
+  .nutrition h3 {
+    font-size: 35px;
+    color: hsl(14, 45%, 36%);
+  }
+  
+  .ingredients ul {
+    margin-left: 25px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+  }
+  
+  ul span {
+    padding-left: 5px;
+  }
+  
+  .instructions ol {
+    margin-left: 25px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+  }
+  
+  .nutrition-table {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    max-width: 500px;
+  }
+  
+  .row .name {
+    font-weight: bold;
+    color: hsl(30, 10%, 34%);
+  }
+  
+  .row .value {
+    font-weight: bold;
+    color: hsl(14, 45%, 36%);
+  }
+  
+  @media screen and (max-width: 750px) {
+    .container {
+      min-width: 100vw;
+      margin: 0;
+      padding: 20px;
+      border-radius: 0;
+    }
+    .prepration ul {
+      margin-left: 20px;
+    }
+  
+    .container img {
+      border-radius: 0;
+    }
+  
+    .prepration {
+      margin-left: 5px;
+    }
+  }
